@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e59">
+  <meta name="description" content="通风与空调工程期末题库：顺序练习、随机刷题、错题复习、收藏与计时模拟考试。">
+  <title>通风与空调 · 期末刷题站</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./questions.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到内容</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="刷题站首页"><span class="brand-symbol">≋</span><span>通风与空调<small>期末刷题站</small></span></a>
+      <div class="nav-caption">学习空间</div>
+      <nav aria-label="主导航" id="navigation">
+        <button data-view="home"><span class="nav-icon">⌂</span>学习概览</button>
+        <button data-view="practice"><span class="nav-icon">▤</span>专项练习</button>
+        <button data-view="exam"><span class="nav-icon">◷</span>模拟考试</button>
+        <button data-view="wrong"><span class="nav-icon">↺</span>我的错题<span id="wrong-count" class="nav-count">0</span></button>
+        <button data-view="favorite"><span class="nav-icon">☆</span>我的收藏<span id="favorite-count" class="nav-count">0</span></button>
+        <button data-view="library"><span class="nav-icon">⌕</span>全部题库</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span>学习进度自动保存<small>保存在当前浏览器，可随时继续</small><button class="text-button" id="open-settings">数据与题库说明</button></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><div><span class="breadcrumb">课程题库</span><span class="breadcrumb-divider">/</span><span id="page-label">学习概览</span></div><span class="course-chip">HVAC · 期末复习</span></header>
+      <main id="main" tabindex="-1"></main>
+      <footer><span>通风与空调工程 · 每一次练习，都离掌握更近一步。</span><span>答案依据原文题库 · <button class="link-button footer-settings" data-settings>数据与题库说明</button></span></footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <noscript>请启用 JavaScript 后使用刷题与考试功能。</noscript>
+</body>
+</html>
